@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <title>Car Collector Game</title>
+
+        
+        <!--styles-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <!-- JQuery -->
+        <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    </head>
+
+    <body class="wrapper" >
+
+        <!-- Main Container -->
+        <div class="container">
+            
+            <!-- header -->
+            <div class="header text-center">
+                <h1>CAR COLLECTOR</h1>
+
+                <div class="instructions">
+                    <h2 class="instruction-header">How to Play</h2>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four cars below. By clicking on a car badge you will add a specific amount of horsepower to your total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <p>The value of each car is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each car.</p>
+                </div>
+            </div> <!-- end of header -->
+
+            <!-- core section of the game -->
+            <div class="row" id="mainSection">
+
+                <!-- first column for random horsepower number -->
+                <div class="col-md-3" id="hpSection">
+                    <h3 class="text-center" id="random">Match Horsepower:</h3>
+                    <h1 class="numberBox text-center" id="randomHP">120</h1>
+                </div>
+
+                <!-- second column car badges -->
+                <div class="col-md-6 text-center" id="carButtons">
+                    <!-- car badges -->
+                    <!-- first car -->
+                    <button id="carOne"><img src="assets/images/porsche.jpg" class="img-responsive icons" id="icon1"></button>
+                    <!-- second car -->
+                    <button id="carTwo"><img src="assets/images/lamborghini.jpg" class="img-responsive icons" id="icon1"></button>
+                    <!-- third car -->
+                    <button id="carThree"><img src="assets/images/bugatti.jpg" class="img-responsive icons" id="icon1"></button>
+                    <!-- forth car -->
+                    <button id="carFour"><img src="assets/images/ferrari.jpg" class="img-responsive icons" id="icon1"></button>
+                    
+                    <h3 id="winOrLose"></h3>
+                    <button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+               
+                </div>
+                
+                <!-- third column for total horsepower -->
+                <div class="col-md-3" id="totalHPSection">
+                    <h3 class="text-center" id="score">Your Total Horsepower:</h3>
+                    <h1 class="numberBox text-center" id="totalHP">0</h1>
+                </div>
+
+            </div> <!-- end of mainSection -->
+
+            <!-- <button class="start">START</button> -->
+
+            <!-- row to keep scores -->
+            <div class="row" id="totalWL">
+
+                <!-- spacer -->
+                <div class="col-md-4"></div>
+
+                <!-- wins column -->
+                <div class="col-md-2" id="winsSection">
+                    <h3 class="text-center" id="wins">Wins: 0</h3>
+                </div>
+                
+                <!-- losses column -->
+                <div class="col-md-2" id="lossesSection">
+                    <h3 class="text-center" id="losses">Losses: 0</h3>
+                </div>
+
+                <!-- spacer -->
+                <div class="col-md-4"></div>
+
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+
+
+</html>

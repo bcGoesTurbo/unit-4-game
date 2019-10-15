@@ -1,0 +1,95 @@
+
+
+.wrapper 
+{ 
+	/* background-image: url("");
+	background-size: 100%;
+	background-repeat: no-repeat; */
+	/* min-height: 100vh; */
+    background: url("../images/background.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+ }
+
+.text-center
+{
+	text-align: center;
+	color: black;
+}
+
+.header {
+	color: black;
+}
+
+p
+{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: black;
+}
+.instructions 
+{
+	/* border: 2px solid black; */
+	/* padding: 1%; */
+	background-color: white; 
+	opacity: 0.6; 
+	font-family: 'Lobster', cursive, 'sans-serif'; 
+	color: brown;
+}
+
+.instruction-header
+{
+	text-align: center;
+	color: black;
+	margin-top: 5px;
+}
+
+/* images for buttons */
+.icons 
+{
+	display: inline-block;
+  	max-width: 100px;
+  	max-height: 100px;
+  	width: auto;
+  	height: auto;
+  	margin:10px;
+}
+
+
+ #icon1
+ {
+	 height: 200px;
+	 width: 200px;
+ }
+
+ #hpSection, #totalHPSection 
+ {
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+ .icons 
+ {
+	display: inline-block;
+  	max-width: 100px;
+  	max-height: 100px;
+  	width: auto;
+  	height: auto;
+  	margin:10px;
+}
+
+ #carButtons {
+
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+
+.numberBox {
+	font-size: 100px;
+	margin: 0px;
+}
+       
